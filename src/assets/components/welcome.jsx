@@ -65,7 +65,7 @@ const welcome = () => {
             <button className="bg-[#ff7a18] text-[#ffffff] text-[1rem] w-full h-[8vh] rounded-xl">
               Start Your Order
             </button>
-            <button className="border-2 border-[#1e88e5] text-[#1e88e5] w-full h-[8vh] rounded-xl text-[1.1rem]">
+            <button className="border-2 border-[#1e88e5] text-[#1e88e5] w-full h-[8vh] rounded-xl text-[1rem]">
               Learn More About Us
             </button>
           </div>
