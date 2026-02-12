@@ -1,13 +1,16 @@
 // import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+import Home from './assets/pages/home';
+import Welcome from './assets/pages/welcomepage';
 import './App.css';
 
 function App() {
-  <Routes>
-    <Route path="/" element={<Home />} />
-  </Routes>;
+  return (
+    <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/home" element={<Home />} />
+    </Routes>
+  );
 }
 
 export default App;
