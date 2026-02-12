@@ -6,9 +6,9 @@ import Bus from '../../../public/images/bus.png';
 
 const welcome = () => {
   return (
-    <div className="flex flex-col gap-5 mt-4 px-5">
+    <div className="flex flex-col gap-5 mt-4 px-7">
       <div>
-        <img src={FoodLoginMobile} />
+        <img className="mx-auto" src={FoodLoginMobile} />
         <div className="flex justify-end mt-6">
           <button className="text-[#1e88e5] text-[1.2rem] px-10 py-2.5 border-2 border-[#1e88e5] rounded-xl">
             Sign In
@@ -41,7 +41,7 @@ const welcome = () => {
                 <img className="p-2" src={Cutlery} />
               </div>
               <div>
-                <h1 className="text-[1.1rem]">Freshly Prepared</h1>
+                <h1 className="text-[1rem]">Freshly Prepared</h1>
               </div>
             </div>
             <div className="bg-[#f3f4f6] rounded-lg w-full h-[8vh] flex items-center gap-3 p-2">
@@ -49,7 +49,7 @@ const welcome = () => {
                 <img className="p-2" src={Cutlery} />
               </div>
               <div>
-                <h1 className="text-[1.1rem]">Support Local Business</h1>
+                <h1 className="text-[1rem]">Support Local Business</h1>
               </div>
             </div>
             <div className="bg-[#f3f4f6] rounded-lg w-full h-[8vh] flex items-center gap-3 p-2">
@@ -57,7 +57,7 @@ const welcome = () => {
                 <img className="p-2" src={Bus} />
               </div>
               <div>
-                <h1 className="text-[1.1rem]">Fast & Reliable Delivery</h1>
+                <h1 className="text-[1rem]">Fast & Reliable Delivery</h1>
               </div>
             </div>
           </div>
