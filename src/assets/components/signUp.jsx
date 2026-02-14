@@ -7,7 +7,9 @@ import { FcGoogle } from 'react-icons/fc';
 import { FaApple } from 'react-icons/fa';
 import DesktopImage from '../../../public/images/login-img-desktop.png';
 import { useNavigate } from 'react-router-dom';
-const signIn = () => {
+import { IoMdCall } from 'react-icons/io';
+import { IoMdCheckbox } from 'react-icons/io';
+const signUp = () => {
   const navigate = useNavigate();
   return (
     <div className="lg:grid lg:grid-cols-2 lg:h-[150vh]">
@@ -30,7 +32,7 @@ const signIn = () => {
         <div className="flex flex-col items-center mt-10">
           <img className="lg:h-[4vh]" src={Logo} />
           <h1 className="text-[#1f2937] text-[1.8rem] font-bold mt-1.3 lg:text-[1.4rem]">
-            Login your Account
+            Create your Account
           </h1>
         </div>
         <form className="mt-7">
@@ -40,19 +42,30 @@ const signIn = () => {
               className="absolute left-3 top-15.5 lg:top-14.5 -translate-y-1/2 text-[#3b4758] pointer-events-none"
             />
 
-            <label className="text-[1rem] lg:text-[0.9rem]">
-              Email or phone number
-            </label>
+            <label className="text-[1rem] lg:text-[0.9rem]">Email</label>
             <input
-              type="text"
+              type="email"
               placeholder="name@gmail.com"
+              className="w-full h-[7.5vh] lg:h-[7.5vh] text-[#3b4758] text-[1rem] lg:text-[0.9rem] pl-10 rounded-xl border border-[#3b3b3b] outline-0 mt-2 "
+            />
+          </div>
+          <div className="relative mt-4">
+            <IoMdCall
+              size={20}
+              className="absolute left-3 top-15.5 lg:top-14.5 -translate-y-1/2 text-[#3b4758] pointer-events-none"
+            />
+
+            <label className="text-[1rem] lg:text-[0.9rem]">Phone number</label>
+            <input
+              type="tel"
+              placeholder="8123340690"
               className="w-full h-[7.5vh] lg:h-[7.5vh] text-[#3b4758] text-[1rem] lg:text-[0.9rem] pl-10 rounded-xl border border-[#3b3b3b] outline-0 mt-2 "
             />
           </div>
           <div className="mt-4 relative">
             <IoMdLock
               size={20}
-              className="absolute left-3 top-14 lg:top-13.5 -translate-y-1/2 text-[#3b4758] pointer-events-none"
+              className="absolute left-3 top-15 lg:top-13.5 -translate-y-1/2 text-[#3b4758] pointer-events-none"
             />
             <FaEyeSlash
               size={19}
@@ -61,15 +74,37 @@ const signIn = () => {
             <label className="text-[1rem] lg:text-[0.9rem]">Password</label>
             <input
               type="password"
-              placeholder="******"
-              className="w-full h-[7.5vh] lg:h-[7.5vh] text-[#3b4758] text-[1rem] pl-10 rounded-xl border border-[#3b3b3b] outline-0 mt-2 "
+              placeholder="QWE123#"
+              className="w-full h-[7.5vh] lg:h-[7.5vh] text-[#3b4758] text-[1rem] lg:text-[0.9rem] pl-10 rounded-xl border-2 border-[#3a96e8] outline-0 mt-2 "
+            />
+          </div>
+          <div className="mt-4 relative">
+            <IoMdLock
+              size={20}
+              className="absolute left-3 top-15 lg:top-13.5 -translate-y-1/2 text-[#3b4758] pointer-events-none"
+            />
+
+            <label className="text-[1rem] lg:text-[0.9rem]">
+              Confirm password
+            </label>
+            <input
+              type="password"
+              placeholder="QWE123#"
+              className="w-full h-[7.5vh] lg:h-[7.5vh] text-[#3b4758] text-[1rem] lg:text-[0.9rem] pl-10 rounded-xl border border-[#3b3b3b] outline-0 mt-2 "
             />
           </div>
         </form>
-        <div className="flex justify-end mt-2">
-          <a className="text-[#61aaea] text-[0.8rem] lg:text-[0.8rem]" href="#">
-            Forgot Password?
-          </a>
+        <div className="flex gap-1.5 mt-3 pr-1">
+          <div>
+            <IoMdCheckbox className="text-[#1e88e5]" size={23} />
+          </div>
+          <div>
+            <p className="text-[0.9rem]">
+              I agree to the{' '}
+              <span className="text-[#1e88e5]">Terms & Conditions </span> and{' '}
+              <span className="text-[#1e88e5]">Privacy Policy</span>
+            </p>
+          </div>
         </div>
         <div>
           <button
@@ -98,13 +133,13 @@ const signIn = () => {
         </div>
         <div className="mt-4 flex justify-center mb-7 text-[0.9rem]">
           <p className="text-[#303030] lg:text-[0.7rem] ">
-            Don't have an account?{' '}
+            Already have an account?
             <a
-              className="text-[#2a87f9] cursor-pointer"
+              className="text-[#2a87f9] cursor-pointer pl-1"
               href=""
-              onClick={() => navigate('/signUp')}
+              onClick={() => navigate('/signIn')}
             >
-              Create an account
+              Sign in
             </a>
           </p>
         </div>
@@ -113,4 +148,4 @@ const signIn = () => {
   );
 };
 
-export default signIn;
+export default signUp;

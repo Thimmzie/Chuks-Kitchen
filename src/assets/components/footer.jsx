@@ -2,8 +2,10 @@ import React from 'react';
 import Logo from '../../../public/images/Chuks Kitchen.png';
 import Link from '../../../constants/index.js';
 import { FaArrowUpLong } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
 
 const footer = () => {
+  const navigate = useNavigate();
   return (
     <div className="hidden lg:block bg-[#62412e] h-[65vh] px-28 pt-15">
       <div className="flex gap-35 ">
@@ -31,7 +33,7 @@ const footer = () => {
           <p className="text-[#d8cfcb] text-[0.8rem]">+234 801 234 5678</p>
           <p className="text-[#d8cfcb] text-[0.8rem]">hello@chukskitchen.com</p>
           <p className="text-[#d8cfcb] text-[0.8rem]">
-            123 Taste Blvd, Lagos, Nigeriat
+            123 Taste Blvd, Lagos, Nigeria
           </p>
         </div>
         <div className="flex flex-col gap-3">
@@ -53,9 +55,17 @@ const footer = () => {
         <p className="text-[#d8cfcb] text-[0.7rem]">
           &copy; 2020 Lift Media. All rights reserved.
         </p>
-        <span className="bg-[#0081fe] px-2.5 py-2.5 rounded-4xl">
-          <FaArrowUpLong className="text-[#ffff] cursor-pointer" size={25} />
-        </span>
+        <button
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+              left: 0,
+            })
+          }
+          className="bg-[#0081fe] px-3 py-3 rounded-4xl"
+        >
+          <FaArrowUpLong className="text-[#ffff] cursor-pointer" size={22} />
+        </button>
       </div>
     </div>
   );
