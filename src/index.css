@@ -19,8 +19,9 @@ html,
 body {
     /* font-family: var(--font-stacksans); */
     scroll-behavior: smooth;
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
     max-width: 100%;
+    /* scrollbar-gutter: stable; */
     /* overflow-y: auto; */
 }
 

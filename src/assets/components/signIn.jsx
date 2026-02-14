@@ -82,11 +82,11 @@ const signIn = () => {
           </div>
         </div>
         <div className="flex flex-col justify-center gap-5 mt-8">
-          <button className="flex justify-center items-center gap-3 w-full border border-[#bdbdbd] h-[7vh] rounded-lg lg:bg-[#ffffff]">
+          <button className="flex justify-center items-center gap-3 w-full border border-[#bdbdbd] h-[7vh] rounded-lg lg:bg-[#ffffff] cursor-pointer">
             <FcGoogle size={25} />
             <p className="text-[1rem] lg:text-[0.8rem]">Continue with Google</p>
           </button>
-          <button className="flex justify-center items-center gap-3 w-full border border-[#bdbdbd] h-[7vh] rounded-lg lg:bg-[#ffffff]">
+          <button className="flex justify-center items-center gap-3 w-full border border-[#bdbdbd] h-[7vh] rounded-lg lg:bg-[#ffffff] cursor-pointer">
             <FaApple size={25} />
             <p className="text-[1rem] lg:text-[0.8rem]">Continue with Apple</p>
           </button>

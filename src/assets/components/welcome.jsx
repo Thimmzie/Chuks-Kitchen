@@ -14,9 +14,17 @@ const welcome = () => {
         <h1 className="text-black text-4xl lg:block xl:hidden">see here</h1>
       </div> */}
       <div className="lg:w-[95%] ">
-        <img className="mx-auto w-full lg:hidden" src={FoodLoginMobile} />
+        <img
+          className="mx-auto w-full lg:hidden"
+          fetchPriority="high"
+          src={FoodLoginMobile}
+        />
 
-        <img className="hidden lg:block" src={ImgLoginDesktop} />
+        <img
+          className="hidden lg:block"
+          fetchPriority="high"
+          src={ImgLoginDesktop}
+        />
 
         <div className="flex justify-end mt-6 lg:hidden">
           <button
