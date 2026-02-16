@@ -1,11 +1,11 @@
 import React from 'react';
-import Logo from '../../../public/images/Chuks Kitchen.png';
+import Logo from '../images/Chuks Kitchen.png';
 import { MdEmail } from 'react-icons/md';
 import { FaEyeSlash } from 'react-icons/fa';
 import { IoMdLock } from 'react-icons/io';
 import { FcGoogle } from 'react-icons/fc';
 import { FaApple } from 'react-icons/fa';
-import DesktopImage from '../../../public/images/login-img-desktop.png';
+import DesktopImage from '../images/login-img-desktop.png';
 import { useNavigate } from 'react-router-dom';
 const signIn = () => {
   const navigate = useNavigate();

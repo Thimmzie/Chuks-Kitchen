@@ -1,7 +1,7 @@
 import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { navLinks } from './../../../constants/index.js';
-import Logo from './../../../public/images/Chuks kitchen.png';
+import Logo from '../images/Chuks kitchen.png';
 
 const navbar = () => {
   return (

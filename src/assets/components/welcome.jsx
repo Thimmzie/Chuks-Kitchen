@@ -1,9 +1,9 @@
 import React from 'react';
-import FoodLoginMobile from '../../../public/images/login-food-mobile.png';
-import Logo from '../../../public/images/Chuks Kitchen.png';
-import Cutlery from '../../../public/images/fork-knife-fill.png';
-import Bus from '../../../public/images/bus.png';
-import ImgLoginDesktop from '../../../public/images/login-img-desktop.png';
+import FoodLoginMobile from '../images/login-food-mobile.png';
+import Logo from '../images/Chuks Kitchen.png';
+import Cutlery from '../images/fork-knife-fill.png';
+import Bus from '../images/bus.png';
+import ImgLoginDesktop from '../images/login-img-desktop.png';
 import { useNavigate } from 'react-router-dom';
 
 const welcome = () => {

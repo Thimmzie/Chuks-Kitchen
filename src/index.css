@@ -57,7 +57,7 @@ body {
 
 }
 .home-hero{
-    background-image: url(../public/images/mobile-banner.png);
+    background-image: url(./assets/images/mobile-banner.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -75,7 +75,7 @@ body {
 }
 @media(min-width: 1024px) {
     .home-hero{
-    background-image: url(../public/images/desktop-banner.jpg);
+    background-image: url(./assets/images/desktop-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -83,7 +83,7 @@ body {
 }
 }
 .addition{
-    background-image: url(../public/images/breaded.png);
+    background-image: url(./assets/images/breaded.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

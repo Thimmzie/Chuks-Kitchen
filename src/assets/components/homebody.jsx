@@ -1,10 +1,10 @@
 import React from 'react';
 import { IoIosSearch } from 'react-icons/io';
-import Jollof from './../../../public/images/jollof.png';
-import Poundo from './../../../public/images/poundo.png';
-import Suya from './../../../public/images/suya.png';
-import Pastry from './../../../public/images/pastries.png';
-import Peppersoup from './../../../public/images/peppersoup.png';
+import Jollof from './../images/jollof.png';
+import Poundo from './../images/poundo.png';
+import Suya from './../images/suya.png';
+import Pastry from './../images/pastries.png';
+import Peppersoup from './../images/peppersoup.png';
 
 const homebody = () => {
   return (
