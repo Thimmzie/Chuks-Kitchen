@@ -1,6 +1,6 @@
 import React from 'react';
 import FoodLoginMobile from '../images/login-food-mobile.png';
-import Logo from '../images/Chuks Kitchen.png';
+import Logo from '../images/chuks-logo.png';
 import Cutlery from '../images/fork-knife-fill.png';
 import Bus from '../images/bus.png';
 import ImgLoginDesktop from '../images/login-img-desktop.png';

@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/Chuks Kitchen.png';
+import Logo from '../images/chuks-logo.png';
 import { MdEmail } from 'react-icons/md';
 import { FaEyeSlash } from 'react-icons/fa';
 import { IoMdLock } from 'react-icons/io';

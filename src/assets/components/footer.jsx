@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../images/Chuks Kitchen.png';
+import Logo from '../images/chuks-logo.png';
 import { links } from '../../../constants/index.js';
 import { FaArrowUpLong } from 'react-icons/fa6';
 import { useNavigate } from 'react-router-dom';
