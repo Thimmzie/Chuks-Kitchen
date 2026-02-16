@@ -6,4 +6,10 @@ const links = [
   { id: 5, link: 'Contavt' },
 ];
 
-export default links;
+const navLinks = [
+  { id: 1, menu: 'Home' },
+  { id: 2, menu: 'Explore' },
+  { id: 3, menu: 'My Orders' },
+  { id: 4, menu: 'Account' },
+];
+export { links, navLinks };

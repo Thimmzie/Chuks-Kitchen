@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../../public/images/Chuks Kitchen.png';
-import Link from '../../../constants/index.js';
+import { links } from '../../../constants/index.js';
 import { FaArrowUpLong } from 'react-icons/fa6';
 import { useNavigate } from 'react-router-dom';
 
@@ -18,7 +18,7 @@ const footer = () => {
         </div>
         <div>
           <h1 className="text-[1.4rem] text-[#ffffff]">Quick Links</h1>
-          {Link.map((link) => {
+          {links.map((link) => {
             return (
               <div className="pt-2" key={link.id}>
                 <a className="text-[#d8cfcb] text-[0.8rem]" href="#">
