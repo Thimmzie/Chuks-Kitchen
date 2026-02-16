@@ -4,8 +4,8 @@ import Jollof from './../../../public/images/jollof.png';
 import Poundo from './../../../public/images/poundo.png';
 import Suya from './../../../public/images/suya.png';
 import Pastry from './../../../public/images/pastries.png';
-import Peppersoup from './../../../public/images/Peppersoup.png';
-import Bread from './../../../public/images/breaded.png';
+import Peppersoup from './../../../public/images/peppersoup.png';
+
 const homebody = () => {
   return (
     <div className=" bg-[#f3f4f6]">
