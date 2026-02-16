@@ -1,7 +1,16 @@
 import React from 'react';
+import Navbar from './../components/navbar';
+import HomeBody from './../components/homebody';
+import Footer from './../components/footer';
 
 const home = () => {
-  return <div>home</div>;
+  return (
+    <div>
+      <Navbar />
+      <HomeBody />
+      <Footer />
+    </div>
+  );
 };
 
 export default home;

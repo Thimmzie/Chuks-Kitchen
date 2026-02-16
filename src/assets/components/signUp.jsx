@@ -94,12 +94,12 @@ const signUp = () => {
             />
           </div>
         </form>
-        <div className="flex gap-1.5 mt-3 pr-1">
+        <div className="flex items-center gap-1.5 mt-3 pr-1">
           <div>
             <IoMdCheckbox className="text-[#1e88e5]" size={23} />
           </div>
           <div>
-            <p className="text-[0.9rem]">
+            <p className="text-[0.8rem] lg:text-[0.9rem]">
               I agree to the{' '}
               <span className="text-[#1e88e5]">Terms & Conditions </span> and{' '}
               <span className="text-[#1e88e5]">Privacy Policy</span>
