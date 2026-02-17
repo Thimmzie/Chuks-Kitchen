@@ -5,8 +5,10 @@ import Poundo from './../images/poundo.png';
 import Suya from './../images/suya.png';
 import Pastry from './../images/pastries.png';
 import Peppersoup from './../images/peppersoup.png';
+import { useNavigate } from 'react-router-dom';
 
 const homebody = () => {
+  const navigate = useNavigate();
   return (
     <div className=" bg-[#f3f4f6]">
       <section>
@@ -21,7 +23,10 @@ const homebody = () => {
               Handcrafted with passion, delivered with care.
             </p>
             <div className="mt-3">
-              <button className="bg-[#ff7a18] text-[#ffffff] text-[1rem] lg:text-[0.9rem] px-8 py-4 md:px-10 lg:py-3 rounded-xl hover:bg-[#ffffff] hover:text-[#ff7a18] hover:cursor-pointer transition duration-500 ease-in-out border border-transparent hover:border-amber-700 outline-0">
+              <button
+                className="bg-[#ff7a18] text-[#ffffff] text-[1rem] lg:text-[0.9rem] px-8 py-4 md:px-10 lg:py-3 rounded-xl hover:bg-[#ffffff] hover:text-[#ff7a18] hover:cursor-pointer transition duration-500 ease-in-out border border-transparent hover:border-amber-700 outline-0"
+                onClick={() => navigate('/explore')}
+              >
                 Discover what's new
               </button>
             </div>

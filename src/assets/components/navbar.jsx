@@ -2,8 +2,10 @@ import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { navLinks } from './../../../constants/index.js';
 import Logo from '../images/chuks-logo.png';
+import { useNavigate } from 'react-router-dom';
 
 const navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="flex justify-between items-center bg-[#ffff] px-3 py-3 sm:px-8 md:px-12">
       <div>
