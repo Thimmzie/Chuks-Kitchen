@@ -10,8 +10,10 @@ import Okro from '../images/okro.png';
 import Snail from '../images/snail.png';
 import Jollof from '../images/jollof.png';
 import { FaCirclePlus } from 'react-icons/fa6';
+import { useNavigate } from 'react-router-dom';
 
 const explore = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#f3f4f6] pb-12">
       <section>
@@ -48,26 +50,28 @@ const explore = () => {
             Popular
           </h1>
           <div className="mt-3 grid grid-cols-1 lg:grid-cols-3 px-3 gap-4 sm:gap-6 md:px-10">
-            <div className="bg-[#ffff] rounded-xl w-full pt-2 pb-2 px-1.5 flex gap-2 sm:gap-5">
-              <div>
-                <img className="rounded-lg w-[60vw]" src={Fried} />
-              </div>
-              <div className="flex flex-col gap-1.5 sm:gap-3 md:pr-2.5 md:pt-3">
-                <h1 className="text-[1rem] font-bold sm:text-[1.1rem] lg:text-[1rem]">
-                  Jollof Rice & Fried Chicken
-                </h1>
-                <p className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem]">
-                  Our signature Jollof rice, served with{' '}
-                  <br className="hidden" /> crispy fried chicken and plantain.
-                </p>
-                <div className="flex justify-between items-center">
-                  <h1 className="text-[1rem] text-[#ff7a18] sm:text-[1.2rem] lg:text-[0.9rem]">
-                    {'\u20A6'}3,500
+            <a href="#" onClick={() => navigate('/details')}>
+              <div className="bg-[#ffff] rounded-xl w-full pt-2 pb-2 px-1.5 flex gap-2 sm:gap-5">
+                <div>
+                  <img className="rounded-lg w-[60vw]" src={Fried} />
+                </div>
+                <div className="flex flex-col gap-1.5 sm:gap-3 md:pr-2.5 md:pt-3">
+                  <h1 className="text-[1rem] font-bold sm:text-[1.1rem] lg:text-[1rem]">
+                    Jollof Rice & Fried Chicken
                   </h1>
-                  <FaCirclePlus size={25} className="text-[#ff7a18]" />
+                  <p className="text-[0.9rem] sm:text-[1rem] lg:text-[0.8rem]">
+                    Our signature Jollof rice, served with{' '}
+                    <br className="hidden" /> crispy fried chicken and plantain.
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <h1 className="text-[1rem] text-[#ff7a18] sm:text-[1.2rem] lg:text-[0.9rem]">
+                      {'\u20A6'}3,500
+                    </h1>
+                    <FaCirclePlus size={25} className="text-[#ff7a18]" />
+                  </div>
                 </div>
               </div>
-            </div>
+            </a>
             <div className="bg-[#ffff] rounded-xl w-full pt-2 pb-2 px-1.5 flex gap-2 sm:gap-5 ">
               <div>
                 <img className="rounded-lg w-[55vw]" src={Eba} />

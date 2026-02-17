@@ -5,6 +5,7 @@ import Welcome from './assets/pages/welcomepage';
 import SignIn from './assets/pages/signInpage';
 import SignUp from './assets/pages/signUppage';
 import Explore from './assets/pages/explorePage';
+import Details from './assets/pages/detailspage';
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Route path="/signUp" element={<SignUp />} />
       <Route path="/home" element={<Home />} />
       <Route path="/explore" element={<Explore />} />
+      <Route path="/details" element={<Details />} />
     </Routes>
   );
 }
