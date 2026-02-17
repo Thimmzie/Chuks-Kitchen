@@ -6,7 +6,7 @@ import { CiAlarmOn } from 'react-icons/ci';
 
 const details = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#f3f4f6]">
+    <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#f3f4f6] overflow-x-hidden">
       <div>
         <img className="lg:hidden" src={Mobile} />
         <img className="hidden lg:block" src={Desktop} />
@@ -120,7 +120,7 @@ const details = () => {
           </h1>
 
           <textarea
-            className="rounded-lg mt-4 w-full h-[17vh] px-2 border border-[#3b3b3b] text-[0.9rem] mb-10 outline-0 pt-2"
+            className="rounded-lg mt-4 w-full h-[17vh] px-2 border border-[#3b3b3b] text-[1rem] mb-10 outline-0 pt-2"
             placeholder="E.g no onion, food is too spicy, food is too hothhhhhhhhhh food is tasty"
           ></textarea>
         </div>
