@@ -3,8 +3,10 @@ import Desktop from '../images/details-desktop.png';
 import Mobile from '../images/details-mobile.png';
 import { IoClose } from 'react-icons/io5';
 import { CiAlarmOn } from 'react-icons/ci';
+import { useNavigate } from 'react-router-dom';
 
 const details = () => {
+  const navigate = useNavigate();
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 bg-[#f3f4f6] overflow-x-hidden">
       <div>
@@ -51,15 +53,17 @@ const details = () => {
         <div>
           <h1 className="text-[1.4rem] font-bold mt-6">Choose your Protein</h1>
           <div className="flex flex-col mt-5 gap-4">
-            <div className=" flex justify-between items-center px-2 rounded-xl border border-[#3b3b3b] w-full h-[7vh]">
-              <div className="flex items-center gap-1.5">
-                <span className="w-8 h-8 border-6 border-[#ff7a18] rounded-full lg:w-6 lg:h-6 lg:border-4"></span>
-                <p className="text-[1rem]">Fried Chicken</p>
+            <a href="#" onClick={() => navigate('/cart')}>
+              <div className=" flex justify-between items-center px-2 rounded-xl border border-[#3b3b3b] w-full h-[7vh]">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-8 h-8 border-6 border-[#ff7a18] rounded-full lg:w-6 lg:h-6 lg:border-4"></span>
+                  <p className="text-[1rem]">Fried Chicken</p>
+                </div>
+                <div>
+                  <p className="text-[1rem]">(Default)</p>
+                </div>
               </div>
-              <div>
-                <p className="text-[1rem]">(Default)</p>
-              </div>
-            </div>
+            </a>
             <div className=" flex justify-between items-center px-2 rounded-xl border border-[#3b3b3b] w-full h-[7vh]">
               <div className="flex items-center gap-1.5">
                 <span className="w-8 h-8 border-6 border-[#ff7a18] rounded-full lg:w-6 lg:h-6 lg:border-4"></span>
