@@ -3,8 +3,11 @@ import Fried from '../images/jollof-fried.png';
 import { FaPlus } from 'react-icons/fa6';
 import { FaMinus } from 'react-icons/fa';
 import { IoClose } from 'react-icons/io5';
+import { useNavigate } from 'react-router-dom';
 
 const cart = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-[#f3f4f6] pt-4 pb-16 px-2 sm:px-12 md:px-20">
       <div className="bg-[#ffff] flex flex-col gap-4  mt-4 mx-2 py-3 px-2 rounded-xl ">
@@ -152,12 +155,14 @@ const cart = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-2 items-center mt-2 mb-2">
-          <FaPlus className="text-[#1e88e5]" size={20} />
-          <h1 className="text-[#1e88e5] text-[1.1rem]">
-            Add more items from Chuks Kitchen
-          </h1>
-        </div>
+        <a href="#" onClick={() => navigate('/order')}>
+          <div className="flex gap-2 items-center mt-2 mb-2">
+            <FaPlus className="text-[#1e88e5]" size={20} />
+            <h1 className="text-[#1e88e5] text-[1.1rem]">
+              Add more items from Chuks Kitchen
+            </h1>
+          </div>
+        </a>
       </div>
     </div>
   );

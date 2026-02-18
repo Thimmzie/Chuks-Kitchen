@@ -7,6 +7,8 @@ import SignUp from './assets/pages/signUppage';
 import Explore from './assets/pages/explorePage';
 import Details from './assets/pages/detailspage';
 import Cart from './assets/pages/cartpage';
+import Order from './assets/pages/orderpage';
+import Delivery from './assets/pages/deliverypage';
 import './App.css';
 
 function App() {
@@ -19,6 +21,8 @@ function App() {
       <Route path="/explore" element={<Explore />} />
       <Route path="/details" element={<Details />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/order" element={<Order />} />
+      <Route path="/delivery" element={<Delivery />} />
     </Routes>
   );
 }
