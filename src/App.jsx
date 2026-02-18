@@ -9,6 +9,9 @@ import Details from './assets/pages/detailspage';
 import Cart from './assets/pages/cartpage';
 import Order from './assets/pages/orderpage';
 import Delivery from './assets/pages/deliverypage';
+import Payment from './assets/pages/paymentpage';
+import Loading from './assets/pages/loadingpage';
+import Success from './assets/pages/successpage';
 import './App.css';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
       <Route path="/cart" element={<Cart />} />
       <Route path="/order" element={<Order />} />
       <Route path="/delivery" element={<Delivery />} />
+      <Route path="/payment" element={<Payment />} />
+      <Route path="/loading" element={<Loading />} />
+      <Route path="/success" element={<Success />} />
     </Routes>
   );
 }

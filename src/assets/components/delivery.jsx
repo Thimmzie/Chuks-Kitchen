@@ -1,10 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const delivery = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-[#f3f4f6] pt-6 lg:pt-16 pb-16 px-3 sm:px-15 md:px-25 lg:px-80 xl:px-96">
       <div className="bg-[#ffffff] rounded-lg pt-3.5 px-2 sm:px-8 pb-13">
-        <h1 className="text-[1.6rem] font-bold">Delivery Details</h1>
+        <a href="#" onClick={() => navigate('/payment')}>
+          <h1 className="text-[1.6rem] font-bold">Delivery Details</h1>
+        </a>
         <div className="h-[0.5px] bg-[#bbbbbb] w-full mt-8"></div>
         <div className="rounded-lg mt-5 border border-[#cecece] w-full py-5 px-2 flex justify-between items-center">
           <p className="text-[1rem] w-[60%]">
