@@ -2,7 +2,7 @@ import React from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { navLinks } from './../../../constants/index.js';
 import Logo from '../images/chuks-logo.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, NavLink } from 'react-router-dom';
 
 const navbar = () => {
   const navigate = useNavigate();
@@ -13,14 +13,20 @@ const navbar = () => {
       </div>
       <div className="hidden lg:block">
         <ul className="hidden lg:flex lg:gap-33">
-          {navLinks.map((menu, index) => (
+          {navLinks.map((menu) => (
             <li key={menu.id}>
-              <a
-                href="#"
-                className={`${index === 0 ? 'text-[#ff7a18]' : 'text-[#1f2937] hover:text-[#ff7a18] hover:cursor-pointer transition duration-700 ease-in-out'} text-[1rem]`}
+              <NavLink
+                to={menu.path}
+                className={({ isActive }) =>
+                  `text-[1rem] transition duration-700 ease-in-out ${
+                    isActive
+                      ? 'text-[#ff7a18]'
+                      : 'text-[#1f2937] hover:text-[#ff7a18]'
+                  }`
+                }
               >
                 {menu.menu}
-              </a>
+              </NavLink>
             </li>
           ))}
         </ul>
@@ -30,7 +36,10 @@ const navbar = () => {
         <GiHamburgerMenu size={25} />
       </div>
       <div className="hidden lg:block">
-        <button className="bg-[#ff7a18] text-[#ffffff] text-[1rem] lg:text-[1rem] px-8 py-4 lg:py-2.5 lg:px-12 rounded-xl hover:bg-[#ffffff] hover:text-[#ff7a18] hover:cursor-pointer transition duration-500 ease-in-out border border-transparent hover:border-amber-700 mt-3 outline-0">
+        <button
+          className="bg-[#ff7a18] text-[#ffffff] text-[1rem] lg:text-[1rem] px-8 py-4 lg:py-2.5 lg:px-12 rounded-xl hover:bg-[#ffffff] hover:text-[#ff7a18] hover:cursor-pointer transition duration-500 ease-in-out border border-transparent hover:border-amber-700 mt-3 outline-0"
+          onClick={() => navigate('/signin')}
+        >
           Login
         </button>
       </div>
