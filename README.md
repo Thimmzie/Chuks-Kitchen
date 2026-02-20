@@ -1,16 +1,103 @@
-# React + Vite
+# Project Title
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Chuks Kitchen – Food Ordering App
 
-Currently, two official plugins are available:
+## Client / Organization
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chuks Kitchen
 
-## React Compiler
+## Prepared by
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Business Analysis Team, True Mind Innovations
 
-## Expanding the ESLint configuration
+## Developed by
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Ayodeji Olupinla
+
+## Project Overview
+
+A food ordering web app designed to provide a fast and reliable food ordering digital experience, allowing customers to place orders, manage their cart, and make payment for their orders while reducing the client’s dependence on manual order handling via WhatsApp and phone calls.
+
+## Problem Statement / Motivation
+
+- Ordering requires manual conversations via phone or WhatsApp.
+- Customers struggle to navigate the full menu.
+- There is no standardized, consistent ordering experience.
+- Errors or miscommunications are common.
+
+## Project Goal
+
+Develop the designed digital solution that enables customers to place orders independently, quickly, and confidently while maintaining brand trust and a visually appealing interface.
+
+## Target Audience
+
+- Busy Professionals
+- Students
+- Families
+
+## Scope
+
+In scope:
+
+- Mobile app UI (primary platform)
+- Responsive web interface (secondary)
+- End-to-end customer ordering flow
+- Basic brand styling (colors, typography, layout)
+
+Out of scope:
+
+- Admin dashboards or backend system management
+- Delivery partner apps
+- Complex payment provider integrations (placeholder UI only)
+
+## Architecture / Technical Overview
+
+- Tech Stack: React.JS and TailwindCSS
+- Routing: React Router v6 with nested routes
+- Tools: Git, Github, Netlify
+
+## User Flow / Interaction
+
+Primary Flow:
+
+- Welcome page (base directory /)
+- Click Sign in button => Sign in page
+- Click Create an account => Sign up page
+- Click Continue button => Home
+- Click Continue button on sign up page => Home
+- Click Discover what's new button/ Explore menu => Explore page
+- Click Jollof rice & Fried chicken (first dish) => Details page
+- Click Fried Chicken (first protein) => Cart page
+- Click "Add more items from chuks kitchen" => My Orders page
+- Click Proceed to checkout button => Delivery page
+- Click Delivery Details heading => Payment page
+- Click Pay 9,900 button => Loading page
+- Click loading image => Success page
+
+## Brand & Visual Guidelines
+
+- Primary Colors: Orange, Pink, Blue
+- Neutral Color: White
+- Brand Feel: Friendly, modern, energetic
+- Visual Style: Clean, simple, food-focused
+
+## Additional Features / Enhancements
+
+- Added a deeper background color overlay on the hero with image background
+- Added hover state for buttons on desktop
+
+## Bottlenecks
+
+- irregular image sizes
+
+## Setup / Installation Instructions
+
+- Clone the repository: git clone " https://github.com/Thimmzie/Chuks-Kitchen.git"
+- Navigate into the project folder: cd Chuks-Kitchen
+- Install Dependencies: npm install
+- Run the project locally: npm start
+- Go to http://localhost:3000 to view the app.
+
+## Project live url
+
+https://chuks-kitchen.netlify.app/
